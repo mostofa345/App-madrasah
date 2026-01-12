@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Tailwind v4 এ ডার্ক মোড এনাবল করার জন্য এটি প্রয়োজন */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
